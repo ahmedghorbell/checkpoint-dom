@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2017/03/29/04/09/shopping-icon-2184065_960_720.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DOM SHOP</title>
+</head>
+<body>
+    <!--######## NAV BAR ######-->
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">DOM shop</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    
+    <!--######## TOTAL PRICE ######-->
+    <div class="tp">
+        <span>Total price:</span>
+        <Span id="totpri">0</Span>
+        <span>€</span>
+    </div>
+    <!--######## SHOP CARDS ######-->
+    <div class="cards">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://www.istore.com.tn/4701-medium_default/iphone-14-128-go-blue.jpg" class="img-fluid rounded-start" alt="I phone">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">I PHONE 14</h5>
+                        <p class="card-text">12 MP camera with 2 sensors</p>
+                        <h6>Price in € :</h6>
+                        <h5 class="unit-price">1200</h5>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="counter">0</span>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://www.samsungtunisie.tn/7436-large_default/samsung-galaxy-s22-ultra-prix-tunisie.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">SAMSUNG S22 ULTRA</h5>
+                        <p class="card-text">108 MP camera with 4 sensors</p>
+                        <h6>Price in € :</h6>
+                        <h5 class="unit-price">1000</h5>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="counter">0</span>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://tunisiatech.tn/7626-medium_default/smartphone-oppo-reno-7.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">OPPO RENO 7</h5>
+                        <p class="card-text">64 MP camera with 3 sensors</p>
+                        <h6>Price in € :</h6>
+                        <h5 class="unit-price">450</h5>
+                        
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="counter">0</span>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://mtsplus.tn/2865-large_default/huawei-watch-gt-3-active-edition-46-mm-noir.jpg" class="img-fluid rounded-start" alt="I phone">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">HUAWEI WATCH GT 3</h5>
+                        <p class="card-text">Long-lasting battery life, wireless charging</p>
+                        <h6>Price in € :</h6>
+                        <h5 class="unit-price">160</h5>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="counter">0</span>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://www.itechstore.tn/5054-large_default/apple-airpods-3e-generation.jpg" class="img-fluid rounded-start" alt="I phone">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">AIRPODS</h5>
+                        <p class="card-text">2nd generation</p>
+                        <h6>Price in € :</h6>
+                        <h5 class="unit-price">80</h5>
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="counter">0</span>
+                        <i class="fa-solid fa-square-minus"></i>
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--##### FOOTER ######-->
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">DOM shop © 2023</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
